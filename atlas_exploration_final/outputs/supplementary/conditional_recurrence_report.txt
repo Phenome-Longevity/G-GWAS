@@ -1,0 +1,24 @@
+Conditional atlas-recurrence contribution model
+===============================================
+
+Question
+- Does the family-broad moderate recurrence layer add predictive signal after broad annotation and coverage covariates?
+
+Units
+- Primary convergence model: all strict eligible 500 kb loci.
+- External support models: 500 kb loci with evidence-disjoint GTEx/non-eQTL SCREEN target-gene convergence.
+
+Main audit lines
+- primary_evidence_disjoint_convergence/moderate_locus: OR=3.02 (95% CI 1.80-5.07), p=3.042e-05.
+- primary_evidence_disjoint_convergence/family_breadth_ge5: OR=0.56 (95% CI 0.36-0.86), p=0.008729.
+- external_same_gene_colocalisation_h4/moderate_locus: OR=0.89 (95% CI 0.37-2.17), p=0.8047.
+- external_same_gene_colocalisation_h4/family_breadth_ge5: OR=1.13 (95% CI 0.61-2.11), p=0.6976.
+- external_eqtl_catalogue_pip_ge_0_1/moderate_locus: OR=0.87 (95% CI 0.19-3.97), p=0.8619.
+- external_abc_enhancer_gene/moderate_locus: OR=0.69 (95% CI 0.12-3.96), p=0.6762.
+
+Interpretation boundary
+- This audit tests recurrence as an independent covariate after annotation-rich-locus proxies.
+- A weak layer coefficient does not invalidate the atlas; it limits claims that recurrence alone resolves target genes.
+- The main atlas claim remains target-gene triangulation, not standalone one-gene causal resolution.
+
+Outputs: outputs/supplementary/conditional_recurrence_locus_table.tsv; outputs/supplementary/conditional_recurrence_layer_yields.tsv; outputs/supplementary/conditional_recurrence_model_results.tsv

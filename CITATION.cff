@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use G-Atlas, please cite this software."
+title: "G-Atlas: a GWAS foundation model for atlas-scale causal variant discovery reveals regulatory pleiotropy across the human phenome"
+authors:
+  - family-names: Green
+    given-names: Emre
+year: 2026
+license: MIT
+type: software

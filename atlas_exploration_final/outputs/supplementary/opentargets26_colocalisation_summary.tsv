@@ -1,0 +1,7 @@
+set	variants	loci_500kb	ot_coloc_any_gene_agree_variants	ot_coloc_any_gene_agree_loci	ot_coloc_h4_ge_0_5_gene_agree_variants	ot_coloc_h4_ge_0_5_gene_agree_loci	ot_coloc_h4_ge_0_8_gene_agree_variants	ot_coloc_h4_ge_0_8_gene_agree_loci	ot_coloc_clpp_ge_0_01_gene_agree_variants	ot_coloc_clpp_ge_0_01_gene_agree_loci
+observed_exact_non_eqtl	1278	807	404	306	364	276	351	267	298	228
+moderate_exact_non_eqtl	1151	738	367	280	330	253	320	246	271	209
+hidden_exact_non_eqtl	127	116	37	34	34	31	31	29	27	26
+lower_recurrence_exact	733	543	228	189	206	173	197	167	162	139
+core_exact_n10	545	411	176	148	158	131	154	128	136	112
+systemic_non_neural_exact	550	379	173	140	157	130	154	127	139	113

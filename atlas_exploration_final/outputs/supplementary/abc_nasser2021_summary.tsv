@@ -1,0 +1,7 @@
+set	variants	loci_500kb	abc_nasser_any_same_gene_variants	abc_nasser_any_same_gene_loci	abc_nasser_score_ge_0_05_same_gene_variants	abc_nasser_score_ge_0_05_same_gene_loci	abc_nasser_score_ge_0_10_same_gene_variants	abc_nasser_score_ge_0_10_same_gene_loci
+observed_exact_non_eqtl	1278	807	57	52	14	14	6	6
+moderate_exact_non_eqtl	1151	738	54	49	13	13	6	6
+hidden_exact_non_eqtl	127	116	3	3	1	1	0	0
+lower_recurrence_exact	733	543	35	34	9	9	4	4
+core_exact_n10	545	411	22	21	5	5	2	2
+systemic_non_neural_exact	550	379	28	25	8	8	3	3

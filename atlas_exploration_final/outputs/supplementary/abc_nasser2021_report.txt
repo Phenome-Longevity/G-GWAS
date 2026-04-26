@@ -1,0 +1,15 @@
+ABC Nasser 2021 enhancer-gene map anchor
+=========================================
+
+Scope
+- Uses the published Nasser et al. 2021 ABC predictions across 131 biosamples.
+- Counts support only when the atlas candidate variant falls inside an ABC enhancer interval linked to the same candidate gene.
+- This is an independent enhancer-to-gene map, not another SCREEN or GTEx overlap.
+
+- observed_exact_non_eqtl/abc_nasser_any_same_gene: 52 observed loci vs 1.2 null; 44.18x; p=0.0004998.
+- moderate_exact_non_eqtl/abc_nasser_any_same_gene: 49 observed loci vs 1.0 null; 47.76x; p=0.0004998.
+- moderate_exact_non_eqtl/abc_nasser_score_ge_0_05_same_gene: 13 observed loci vs 0.2 null; 71.04x; p=0.0004998.
+- moderate_exact_non_eqtl/abc_nasser_score_ge_0_10_same_gene: 6 observed loci vs 0.1 null; 56.34x; p=0.0004998.
+- systemic_non_neural_exact/abc_nasser_any_same_gene: 25 observed loci vs 0.5 null; 50.51x; p=0.0004998.
+
+Elapsed seconds: 24.4

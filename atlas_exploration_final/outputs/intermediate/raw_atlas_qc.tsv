@@ -1,0 +1,6 @@
+metric	value
+raw_atlas_variants	1730224
+unique_gwas_traits	1587
+recurrent_variants_n_traits_ge_3	312794
+core_recurrent_variants_n_traits_ge_10	21027
+unique_snps	1730218

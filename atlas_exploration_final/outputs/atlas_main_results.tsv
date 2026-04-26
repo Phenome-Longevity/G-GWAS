@@ -1,0 +1,11 @@
+result	observed_loci	null_loci	fold	empirical_p
+evidence_disjoint_locus_convergence_overall	807	266.329	3.0300868474706095	0.0004997501249375312
+evidence_disjoint_locus_convergence_moderate	738	219.686	3.3593401491219286	0.0004997501249375312
+opentargets_l2g_agreement_moderate	288	16.3005	17.66816968804638	0.0004997501249375312
+opentargets_e2g_agreement_moderate	251	14.976	16.76014957264957	0.0004997501249375312
+opentargets_colocalisation_h4_ge_0_8_moderate	246	15.0915	16.300566544081104	0.0004997501249375312
+opentargets_colocalisation_clpp_ge_0_01_moderate	209	13.535	15.441448097524935	0.0004997501249375312
+standalone_e2g_interval_support_moderate	239			
+eqtl_catalogue_pip_ge_0_1_same_gene_moderate	55	3.3235	16.548819016097486	0.0004997501249375312
+eqtl_catalogue_pip_ge_0_5_same_gene_moderate	18	0.932	19.313304721030043	0.0004997501249375312
+abc_nasser_same_gene_moderate	49	1.026	47.758284600389864	0.0004997501249375312

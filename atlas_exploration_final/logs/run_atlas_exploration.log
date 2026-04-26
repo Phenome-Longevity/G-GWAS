@@ -1,0 +1,209 @@
+official atlas exploration run
+cache before run:
+cache_release_manifest.tsv	150052
+[12:29:55] Atlas exploration final: no-window downstream analysis
+[12:29:55] Package: .
+[12:29:55] Raw atlas input: inputs/no_window_gatlas_1587_gwas.parquet
+[12:29:55] Public-data cache: cache_v3
+[12:29:55] Outputs reset: outputs
+[12:29:55] Public cache bootstrap: checking cache_v3
+[12:29:55] public cache abc_nasser2021: 1/1 files missing or size-mismatched
+[12:29:55] public cache abc_nasser2021: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_abc_nasser2021.tar.zst (340,561,329 bytes)
+[12:29:58] public cache abc_nasser2021: extracting cache_v3/.cache_release_archives/cache_abc_nasser2021.tar.zst
+[12:29:58] public cache abc_nasser2021: ready (1 files)
+[12:29:58] public cache causaldb: 2/2 files missing or size-mismatched
+[12:29:58] public cache causaldb: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_causaldb.tar.zst (215,665,867 bytes)
+[12:30:00] public cache causaldb: extracting cache_v3/.cache_release_archives/cache_causaldb.tar.zst
+[12:30:00] public cache causaldb: ready (2 files)
+[12:30:00] public cache eqtl_catalogue_r8_beta_susie: 221/221 files missing or size-mismatched
+[12:30:00] public cache eqtl_catalogue_r8_beta_susie: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_eqtl_catalogue_r8_beta_susie.tar.zst (394,384,268 bytes)
+[12:30:04] public cache eqtl_catalogue_r8_beta_susie: extracting cache_v3/.cache_release_archives/cache_eqtl_catalogue_r8_beta_susie.tar.zst
+[12:30:04] public cache eqtl_catalogue_r8_beta_susie: ready (221 files)
+[12:30:04] public cache gtex_v8: 2/2 files missing or size-mismatched
+[12:30:04] public cache gtex_v8: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_gtex_v8.tar.zst (2,131,834,918 bytes)
+[12:30:26] public cache gtex_v8: extracting cache_v3/.cache_release_archives/cache_gtex_v8.tar.zst
+[12:30:27] public cache gtex_v8: ready (2 files)
+[12:30:27] public cache gwas_catalog: 1/1 files missing or size-mismatched
+[12:30:27] public cache gwas_catalog: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_gwas_catalog.tar.zst (59,184,929 bytes)
+[12:30:28] public cache gwas_catalog: extracting cache_v3/.cache_release_archives/cache_gwas_catalog.tar.zst
+[12:30:28] public cache gwas_catalog: ready (1 files)
+[12:30:28] public cache opentargets_platform_26_03: 646/646 files missing or size-mismatched
+[12:30:28] public cache opentargets_platform_26_03: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_opentargets_platform_26_03.tar.zst (19,186,912,253 bytes)
+[12:36:12] public cache opentargets_platform_26_03: retrying after failed download attempt 1: downloaded size mismatch: 12,280,922,112 != 19,186,912,253 bytes
+[12:36:14] public cache opentargets_platform_26_03: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_opentargets_platform_26_03.tar.zst (19,186,912,253 bytes)
+[12:40:30] public cache opentargets_platform_26_03: extracting cache_v3/.cache_release_archives/cache_opentargets_platform_26_03.tar.zst
+[12:40:57] public cache opentargets_platform_26_03: ready (646 files)
+[12:40:57] public cache public_functional_support: 5/5 files missing or size-mismatched
+[12:40:57] public cache public_functional_support: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_public_functional_support.tar.zst (62,006,856 bytes)
+[12:40:59] public cache public_functional_support: extracting cache_v3/.cache_release_archives/cache_public_functional_support.tar.zst
+[12:40:59] public cache public_functional_support: ready (5 files)
+[12:40:59] public cache screen_ccre: 10/10 files missing or size-mismatched
+[12:40:59] public cache screen_ccre: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_screen_ccre.tar.zst (514,287,443 bytes)
+[12:41:07] public cache screen_ccre: extracting cache_v3/.cache_release_archives/cache_screen_ccre.tar.zst
+[12:41:07] public cache screen_ccre: ready (10 files)
+[12:41:07] public cache trait_family_map: 1/1 files missing or size-mismatched
+[12:41:07] public cache trait_family_map: downloading https://gatlas.szags.uk/g-atlas/atlas-exploration-final/20260426T092123Z/resources/cache_trait_family_map.tar.zst (757,724 bytes)
+[12:41:08] public cache trait_family_map: extracting cache_v3/.cache_release_archives/cache_trait_family_map.tar.zst
+[12:41:08] public cache trait_family_map: ready (1 files)
+[12:41:08] ======================================================================
+[12:41:08] ATLAS EXPLORATION INPUT STEP 1/12: Rebuild candidate table from raw atlas
+[12:41:08] ======================================================================
+[12:41:08] Loading raw no-window G-Atlas parquet
+[12:41:10] Raw atlas QC passed
+[12:41:10] Building trait-family and score layers from raw atlas
+[12:41:24] Core candidates: 21,027; lower-recurrence candidates: 17,667
+[12:41:24] Adding exact-rsID catalog/CAUSALdb flags
+[12:41:28] Streaming GTEx v8 significant eQTL/sQTL target genes
+[12:41:32] eQTL: scanning tissue 1/49
+[12:41:45] eQTL: scanning tissue 11/49
+[12:41:52] eQTL: scanning tissue 21/49
+[12:42:06] eQTL: scanning tissue 31/49
+[12:42:21] eQTL: scanning tissue 41/49
+[12:42:33] eQTL: scanning tissue 49/49
+[12:42:35] sQTL: scanning tissue 1/49
+[12:42:39] sQTL: scanning tissue 11/49
+[12:42:42] sQTL: scanning tissue 21/49
+[12:42:47] sQTL: scanning tissue 31/49
+[12:42:52] sQTL: scanning tissue 41/49
+[12:42:56] sQTL: scanning tissue 49/49
+/home/vigil/Research/PolyGen/pgsfm/foundationalmodel/atlas_exploration_final/run_atlas_exploration.py:880: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out[col] = out[col].fillna(False).astype(bool)
+/home/vigil/Research/PolyGen/pgsfm/foundationalmodel/atlas_exploration_final/run_atlas_exploration.py:880: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out[col] = out[col].fillna(False).astype(bool)
+/home/vigil/Research/PolyGen/pgsfm/foundationalmodel/atlas_exploration_final/run_atlas_exploration.py:880: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out[col] = out[col].fillna(False).astype(bool)
+/home/vigil/Research/PolyGen/pgsfm/foundationalmodel/atlas_exploration_final/run_atlas_exploration.py:880: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out[col] = out[col].fillna(False).astype(bool)
+/home/vigil/Research/PolyGen/pgsfm/foundationalmodel/atlas_exploration_final/run_atlas_exploration.py:880: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out[col] = out[col].fillna(False).astype(bool)
+/home/vigil/Research/PolyGen/pgsfm/foundationalmodel/atlas_exploration_final/run_atlas_exploration.py:880: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out[col] = out[col].fillna(False).astype(bool)
+[12:42:57] Annotating SCREEN cCRE overlaps
+[12:43:00] SCREEN: scanning V4-hg38.Gene-Links.3D-Chromatin.txt
+[12:43:26] SCREEN: scanning V4-hg38.Gene-Links.CRISPR.txt
+[12:43:26] SCREEN: scanning V4-hg38.Gene-Links.eQTLs.txt
+[12:43:40] Joining GTEx and SCREEN target-gene evidence
+[12:43:41] Wrote generated candidate table: outputs/intermediate/atlas_evidence_disjoint_screen_variants.tsv
+[12:43:42] ======================================================================
+[12:43:42] ATLAS EXPLORATION MAIN STEP 2/12: Evidence-disjoint locus convergence
+[12:43:42] ======================================================================
+[12:43:51] Report: outputs/supplementary/locus_convergence_report.txt
+[12:43:51] Denominators
+[12:43:51] - strict_eligible_all_screen_context: 3,083 variants; 1,630 500kb loci
+[12:43:51] - permutation_tested_non_eqtl: 2,136 variants; 1,192 500kb loci
+[12:43:51] - observed_exact_non_eqtl: 1,278 variants; 807 500kb loci
+[12:43:51] Primary locus-level results
+[12:43:51] - overall_non_eqtl_tested: 807 observed loci vs 266.3 null; 3.03x; p=0.0004998
+[12:43:51] - score_moderate_0.2_0.5: 738 observed loci vs 219.7 null; 3.36x; p=0.0004998
+[12:43:51] - source_lower_recurrence_exact: 543 observed loci vs 114.3 null; 4.75x; p=0.0004998
+[12:43:51] - axis_systemic_non_neural: 379 observed loci vs 88.8 null; 4.27x; p=0.0004998
+[12:43:51] ======================================================================
+[12:43:51] ATLAS EXPLORATION MAIN STEP 3/12: Open Targets L2G/e2G target-gene coherence
+[12:43:51] ======================================================================
+[12:43:51] Open Targets credible_set: 200 cached parts
+[12:43:51] Open Targets l2g_prediction: 200 cached parts
+[12:43:51] Open Targets target: 10 cached parts
+[12:43:51] Open Targets study: 1 cached parts
+[12:43:52] Open Targets colocalisation: 200 cached parts
+[12:43:52] Scanning Open Targets 26.03 GWAS credible sets...
+[12:44:27]   credible_set parts 50/200; coordinate hit rows 1,754
+[12:45:07]   credible_set parts 100/200; coordinate hit rows 3,319
+[12:45:39]   credible_set parts 150/200; coordinate hit rows 4,584
+[12:46:10]   credible_set parts 200/200; coordinate hit rows 6,104
+[12:46:10] Open Targets coordinate hits: 751 variants, 521 loci
+[12:46:10] Scanning Open Targets L2G for 5,143 matched study loci...
+[12:52:17] Report: outputs/supplementary/opentargets26_l2g_e2g_report.txt
+[12:52:17] - observed_exact_non_eqtl: 385 GWAS credible-set coordinate loci; 312 L2G-agreeing loci; 268 e2G-agreeing loci
+[12:52:17] - moderate_exact_non_eqtl: 351 GWAS credible-set coordinate loci; 288 L2G-agreeing loci; 251 e2G-agreeing loci
+[12:52:17] - moderate_exact_non_eqtl/e2G gene-label null: 251 observed loci vs 15.0 null; 16.76x; p=0.0004998
+[12:52:17] ======================================================================
+[12:52:17] ATLAS EXPLORATION MAIN STEP 4/12: Open Targets same-gene GWAS-molQTL colocalisation
+[12:52:17] ======================================================================
+[12:52:17] Scanning Open Targets 26.03 colocalisation for 5,143 GWAS study loci...
+[12:52:42]   colocalisation parts 50/200; rows 153,496
+[12:53:07]   colocalisation parts 100/200; rows 306,977
+[12:53:33]   colocalisation parts 150/200; rows 461,196
+[12:53:59]   colocalisation parts 200/200; rows 615,810
+[12:54:27] Report: outputs/supplementary/opentargets26_colocalisation_report.txt
+[12:54:27] - moderate_exact_non_eqtl/h4>=0.8 same-gene colocalisation: 246 observed loci vs 15.1 null; 16.30x; p=0.0004998
+[12:54:27] ======================================================================
+[12:54:27] ATLAS EXPLORATION SUPPLEMENT STEP 5/12: Open Targets E2G and pQTL context
+[12:54:27] ======================================================================
+[12:54:27] Open Targets enhancer_to_gene: 30 cached parts
+[12:54:28] Scanning standalone Open Targets enhancer_to_gene intervals...
+[12:55:04] Supplementary Open Targets context: 334 variants with direct E2G interval support; 26 variants with same-gene pQTL h4>=0.8.
+[12:55:04] Elapsed seconds: 37.2
+[12:55:04] - moderate_exact_non_eqtl supplementary context: 239 standalone E2G loci; 18 pQTL h4>=0.8 loci
+[12:55:04] ======================================================================
+[12:55:04] ATLAS EXPLORATION MAIN STEP 6/12: eQTL Catalogue SuSiE molecular-QTL support
+[12:55:04] ======================================================================
+[12:55:04] eQTL Catalogue r8 beta: 220 credible-set files cached
+[12:55:05] Scanning 220 eQTL Catalogue r8 beta credible-set files...
+[12:55:05]   eQTL Catalogue files 25/220; hit rows 11
+[12:55:07]   eQTL Catalogue files 50/220; hit rows 100
+[12:55:08]   eQTL Catalogue files 75/220; hit rows 127
+[12:55:09]   eQTL Catalogue files 100/220; hit rows 179
+[12:55:09]   eQTL Catalogue files 125/220; hit rows 184
+[12:55:09]   eQTL Catalogue files 150/220; hit rows 189
+[12:55:09]   eQTL Catalogue files 175/220; hit rows 197
+[12:55:11]   eQTL Catalogue files 200/220; hit rows 310
+[12:55:28] Report: outputs/supplementary/eqtl_catalogue_r8_beta_report.txt
+[12:55:28] - moderate_exact_non_eqtl/eQTL Catalogue PIP>=0.1 same-gene: 55 observed loci vs 3.3 null; 16.55x; p=0.0004998
+[12:55:28] ======================================================================
+[12:55:28] ATLAS EXPLORATION MAIN STEP 7/12: ABC Nasser 2021 enhancer-gene support
+[12:55:28] ======================================================================
+[12:55:28] ABC Nasser 2021: predictions cached
+[12:55:28] Scanning ABC Nasser 2021 enhancer-gene maps...
+[12:55:30]   ABC rows scanned 1,000,000; hit rows 118
+[12:55:31]   ABC rows scanned 2,000,000; hit rows 122
+[12:55:33]   ABC rows scanned 3,000,000; hit rows 259
+[12:55:34]   ABC rows scanned 4,000,000; hit rows 362
+[12:55:36]   ABC rows scanned 5,000,000; hit rows 383
+[12:55:37]   ABC rows scanned 6,000,000; hit rows 411
+[12:55:38]   ABC rows scanned 7,000,000; hit rows 429
+[12:55:52] Report: outputs/supplementary/abc_nasser2021_report.txt
+[12:55:52] - moderate_exact_non_eqtl/ABC same-gene: 49 observed loci vs 1.0 null; 47.76x; p=0.0004998
+[12:55:52] ======================================================================
+[12:55:52] ATLAS EXPLORATION OUTPUT STEP 8/12: Write main and supplementary outputs
+[12:55:52] ======================================================================
+[12:55:53] Report: outputs/atlas_report.md
+[12:55:53] Main results: outputs/atlas_main_results.tsv
+[12:55:53] Tiered stack: outputs/atlas_tiered_mechanism_stack.tsv
+[12:55:53] Variant evidence: outputs/atlas_variant_evidence.tsv
+[12:55:53] Prioritized candidates: outputs/atlas_prioritized_locus_gene_candidates.tsv
+[12:55:53] ======================================================================
+[12:55:53] ATLAS EXPLORATION MIDDLE STEP 9/12: Mechanism-readiness candidate layer
+[12:55:53] ======================================================================
+[12:55:53] Report: outputs/mechanism_readiness/atlas_mechanism_readiness_report.md
+[12:55:53] - mechanism-readiness layer: 224 clean mechanism-ready loci; 430 experiment-ready candidate variants
+[12:55:53] ======================================================================
+[12:55:53] ATLAS EXPLORATION MIDDLE STEP 10/12: Public functional-support and candidate prioritization layer
+[12:55:53] ======================================================================
+[12:55:53] pyliftover is not installed; public functional coordinate tests use as-provided coordinates only
+[12:56:00] Public functional support: outputs/mechanism_readiness/public_functional_support_summary.tsv
+[12:56:00] Prioritized candidate mechanisms: outputs/mechanism_readiness/prioritized_candidate_mechanisms.tsv
+[12:56:00] - public functional support: 3 FDR<0.05 MPRA candidate rows; 2 broad loci
+[12:56:00] - prioritized candidate mechanisms: 796 ranked variant-gene rows; 485 broad loci
+[12:56:00] ======================================================================
+[12:56:00] ATLAS EXPLORATION AUDIT STEP 11/12: Conditional recurrence contribution model
+[12:56:00] ======================================================================
+[12:56:01] Report: outputs/supplementary/conditional_recurrence_report.txt
+[12:56:01] - external h4 colocalisation/moderate_locus adjusted audit: OR=0.89; 95% CI 0.37-2.17; p=0.8047
+[12:56:01] - moderate_exact_loci descriptive yield: 49 full-stack loci; 253 h4>=0.8 colocalised loci
+[12:56:01] ======================================================================
+[12:56:01] ATLAS EXPLORATION SUPPLEMENT STEP 12/12: Leave-one-resource-out target-gene prediction
+[12:56:01] ======================================================================
+[13:01:46] Report: outputs/supplementary/leave_one_resource_out_target_gene_report.txt
+[13:01:46] - moderate_exact_non_eqtl/leave-one-out h4>=0.8 colocalisation: 229 observed loci vs 189.1 null; 1.21x; p=0.0004998
+[13:01:46] Clean outputs
+[13:01:46] - outputs/atlas_report.md
+[13:01:46] - outputs/atlas_main_results.tsv
+[13:01:46] - outputs/atlas_tiered_mechanism_stack.tsv
+[13:01:46] - outputs/atlas_variant_evidence.tsv
+[13:01:46] - outputs/atlas_prioritized_locus_gene_candidates.tsv
+[13:01:46] - outputs/mechanism_readiness
+[13:01:46] - outputs/mechanism_readiness/prioritized_candidate_mechanisms.tsv
+[13:01:46] - outputs/supplementary/conditional_recurrence_model_results.tsv
+[13:01:46] - outputs/supplementary/leave_one_resource_out_target_gene_summary.tsv
+[13:01:46] - outputs/supplementary
+[13:01:46] Done.

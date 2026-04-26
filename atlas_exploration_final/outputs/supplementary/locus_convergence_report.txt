@@ -1,0 +1,19 @@
+Atlas exploration locus-collapsed evidence-disjoint permutation
+======================================================
+
+Denominators
+- strict_eligible_all_screen_context: broad strict eligible table; includes variants without non-eQTL SCREEN genes.
+- permutation_tested_non_eqtl: strict eligible plus at least one GTEx gene and at least one non-eQTL SCREEN gene.
+- observed_exact_non_eqtl: permutation-tested variants with GTEx/non-eQTL SCREEN target-gene overlap.
+
+Key locus-level results
+- overall_non_eqtl_tested: 807 observed loci vs 266.3 +/- 11.0 null; 3.03x, empirical p=0.0004998.
+- score_moderate_0.2_0.5: 738 observed loci vs 219.7 +/- 10.2 null; 3.36x, empirical p=0.0004998.
+- source_lower_recurrence_exact: 543 observed loci vs 114.3 +/- 8.4 null; 4.75x, empirical p=0.0004998.
+- axis_systemic_non_neural: 379 observed loci vs 88.8 +/- 7.1 null; 4.27x, empirical p=0.0004998.
+
+Reporting scope
+- 500 kb loci are broad clustering units used to audit locus dispersion.
+- This section reports evidence-disjoint target-gene convergence after broad-locus collapse.
+
+Outputs: outputs/supplementary/locus_convergence_summary.tsv; outputs/supplementary/locus_convergence_null_draws.tsv; outputs/supplementary/locus_convergence_denominators.tsv

@@ -1,0 +1,7 @@
+result	candidate_rows	variants	broad_loci_500kb	genes	interpretation
+input_candidate_pairs	796	675	485	651	Union of full-stack candidates and clean single-gene follow-up candidates.
+mpravardb_exact_rsid_variant	35	25	22	34	Candidate rsID has public MPRA variant-effect data.
+mpravardb_significant_exact_rsid_variant	3	2	2	3	Candidate rsID has FDR<0.05 public MPRA variant-effect evidence.
+mprabase_element_overlap	1	1	1	1	Candidate coordinate falls inside a public MPRA-assayed element.
+opentargets_crispr_gene_context	22	22	15	15	Candidate gene has Open Targets CRISPR or CRISPR-screen disease/cell context.
+direct_crispri_flowfish_same_gene	0	0	0	0	Candidate coordinate overlaps a CRISPRi-FlowFISH perturbation interval for the same gene.

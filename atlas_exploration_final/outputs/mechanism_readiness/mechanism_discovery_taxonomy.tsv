@@ -1,0 +1,16 @@
+set	variants	broad_loci_500kb	genes	single_gene_variants	multi_gene_variants	three_dimensional_link_variants	crispr_link_variants	catalog_distinct_exact_rsid_variants	median_n_traits	median_n_families	median_max_score	median_candidate_genes
+all_evidence_disjoint_candidates	1278	807	1512	873	405	1278	0	1278	9.0	4.0	0.239593355	1.0
+single_gene_candidates	873	641	722	873	0	873	0	873	9.0	4.0	0.23929086	1.0
+multi_gene_candidates	405	282	886	0	405	405	0	405	8.0	4.0	0.2409089	2.0
+three_dimensional_link_candidates	1278	807	1512	873	405	1278	0	1278	9.0	4.0	0.239593355	1.0
+exact_rsid_catalog_distinct_candidates	1278	807	1512	873	405	1278	0	1278	9.0	4.0	0.239593355	1.0
+family_breadth_ge5_candidates	609	434	745	430	179	609	0	609	11.0	6.0	0.24478981	1.0
+family_breadth_ge6_candidates	343	271	440	239	104	343	0	343	12.0	6.0	0.25108108	1.0
+lower_recurrence_candidates	733	543	1001	494	239	733	0	733	6.0	4.0	0.23228762	1.0
+core_recurrence_candidates	545	411	684	379	166	545	0	545	12.0	6.0	0.26036975	1.0
+score_hidden_candidates	127	116	173	97	30	127	0	127	11.0	6.0	0.17461076	1.0
+score_moderate_candidates	1151	738	1394	776	375	1151	0	1151	8.0	4.0	0.24609134	1.0
+systemic_non_neural_candidates	550	379	688	383	167	550	0	550	9.0	5.0	0.23918501	1.0
+neural_enriched_candidates	184	174	291	119	65	184	0	184	10.0	4.0	0.257450285	1.0
+neuro_systemic_candidates	214	187	283	154	60	214	0	214	8.0	5.0	0.235263885	1.0
+systemic_other_candidates	285	244	429	183	102	285	0	285	4.0	3.0	0.23003338	1.0

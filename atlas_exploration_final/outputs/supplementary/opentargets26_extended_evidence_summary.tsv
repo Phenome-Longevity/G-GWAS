@@ -1,0 +1,6 @@
+set	variants	loci_500kb	standalone_e2g_gene_agree_variants	standalone_e2g_gene_agree_loci	same_gene_pqtl_h4_ge_0_8_variants	same_gene_pqtl_h4_ge_0_8_loci	same_gene_pqtl_clpp_ge_0_01_variants	same_gene_pqtl_clpp_ge_0_01_loci
+observed_exact_non_eqtl	1278	807	334	271	26	20	19	15
+moderate_exact_non_eqtl	1151	738	296	239	22	18	16	13
+lower_recurrence_exact	733	543	187	164	10	9	9	8
+core_exact_n10	545	411	147	129	16	15	10	10
+systemic_non_neural_exact	550	379	150	127	12	10	12	10

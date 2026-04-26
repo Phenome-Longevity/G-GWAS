@@ -1,0 +1,9 @@
+tier	definition	variants	broad_loci_500kb	moderate_loci	systemic_non_neural_loci	same_gene_l2g_loci	same_gene_e2g_loci	same_gene_colocalisation_h4_ge_0_8_loci	same_gene_colocalisation_clpp_ge_0_01_loci	standalone_e2g_interval_loci	same_gene_pqtl_h4_ge_0_8_loci	eqtl_catalogue_pip_ge_0_1_loci	eqtl_catalogue_pip_ge_0_5_loci	abc_nasser_same_gene_loci	abc_nasser_score_ge_0_05_loci	not_exact_or_ld_proxy_r2_ge_0_8_loci	no_external_gwas_credible_set_broad_locus_overlap_loci
+no_window_atlas	all no-window atlas variants	1730224															
+recurrent_atlas	n_traits >= 3	312794															
+core_recurrent_atlas	n_traits >= 10	21027															
+moderate_family_broad_layer	moderate-score family-broad regulatory recurrence layer	7560	2685	2685													
+evidence_disjoint_exact	GTEx QTL gene overlaps non-eQTL SCREEN-linked gene	1278	807	738	379												
+external_target_gene_coherence	evidence-disjoint exact candidates with same-gene Open Targets L2G/e2G agreement at GWAS credible-set coordinates	1278	807	738	379	312	268										
+external_colocalisation_support	evidence-disjoint exact candidates with same-gene Open Targets GWAS-molecular-QTL colocalisation support	1278	807	738	379			267	228	271	20						
+orthogonal_public_database_support	evidence-disjoint exact candidates with same-gene eQTL Catalogue fine-mapped QTL and ABC enhancer-gene map support	1278	807	738	379							62	20	52	14	535	1

@@ -1,0 +1,26 @@
+# Data and local symlinks (too large or machine-specific for git)
+data/__pycache__/
+data/atlas_pips/
+data/gwas_31k/
+data/gwas_31k
+data/causaldb/
+data/causaldb
+data/raw_gwas/
+data/sentinel_sumstats/
+data/sentinel_sumstats
+data/hm3.bim
+data/gencode_genes.bed
+
+# Runtime state
+*.pid
+.env
+.env.*
+
+# Atlas exploration public cache (recreated from the manifest and public URL)
+atlas_exploration_final/cache_v3/**
+!atlas_exploration_final/cache_v3/
+!atlas_exploration_final/cache_v3/cache_release_manifest.tsv
+
+# Python
+__pycache__/
+*.pyc

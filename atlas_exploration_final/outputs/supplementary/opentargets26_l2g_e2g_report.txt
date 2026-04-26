@@ -1,0 +1,38 @@
+Open Targets 26.03 external genetics anchor
+================================================
+
+External source: https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/26.03/output
+External cache: cache_v3/opentargets_platform_26_03
+
+Scope
+- GWAS credible-set coordinate overlap uses Open Targets 95% credible-set variants by chromosome/position.
+- Target-gene agreement tests whether GTEx/non-eQTL SCREEN candidate genes match Open Targets L2G genes at matched GWAS credible-set coordinates.
+- L2G/e2G agreement is reported as an orthogonal target-assignment anchor alongside separate colocalisation and functional-support layers.
+
+Descriptive anchor counts
+- observed_exact_non_eqtl: 385 GWAS credible-set coordinate loci; 312 L2G-agreeing loci; 268 e2G-agreeing loci.
+- moderate_exact_non_eqtl: 351 GWAS credible-set coordinate loci; 288 L2G-agreeing loci; 251 e2G-agreeing loci.
+- lower_recurrence_exact: 243 GWAS credible-set coordinate loci; 192 L2G-agreeing loci; 163 e2G-agreeing loci.
+- systemic_non_neural_exact: 178 GWAS credible-set coordinate loci; 143 L2G-agreeing loci; 127 e2G-agreeing loci.
+
+Matched coordinate-overlap null
+- observed_exact_non_eqtl/ot_gwas_cs_position_any: 385 observed loci vs 393.0 null; 0.98x; p=0.8436.
+- moderate_exact_non_eqtl/ot_gwas_cs_position_any: 351 observed loci vs 358.1 null; 0.98x; p=0.8231.
+- systemic_non_neural_exact/ot_gwas_cs_position_any: 178 observed loci vs 178.8 null; 1.00x; p=0.6022.
+
+LD-proxy knownness audit
+- observed_exact_non_eqtl: 535/807 loci are not exact external GWAS credible-set coordinate hits and not r2>=0.8 LD proxies; 1 loci have no broad 500 kb external GWAS credible-set overlap.
+- moderate_exact_non_eqtl: 482/738 loci are not exact external GWAS credible-set coordinate hits and not r2>=0.8 LD proxies; 1 loci have no broad 500 kb external GWAS credible-set overlap.
+- systemic_non_neural_exact: 241/379 loci are not exact external GWAS credible-set coordinate hits and not r2>=0.8 LD proxies; 0 loci have no broad 500 kb external GWAS credible-set overlap.
+
+Gene-label null among exact candidate genes
+- observed_exact_non_eqtl/ot_l2g_gene_agree_score_ge_0_05: 312 observed loci vs 21.6 null; 14.48x; p=0.0004998.
+- moderate_exact_non_eqtl/ot_l2g_gene_agree_score_ge_0_05: 288 observed loci vs 16.3 null; 17.67x; p=0.0004998.
+- systemic_non_neural_exact/ot_l2g_e2g_gene_agree: 127 observed loci vs 5.8 null; 21.98x; p=0.0004998.
+
+Reporting interpretation
+- External GWAS credible-set coordinate overlap is common; target-gene agreement is the strongest matched signal.
+- Atlas GTEx/non-eQTL candidate genes recur at external GWAS credible-set coordinates and agree with Open Targets L2G/e2G target-gene predictions above gene-label null.
+- These records prioritize regulatory target-gene hypotheses for full-stack evidence integration.
+
+Elapsed seconds: 506.0

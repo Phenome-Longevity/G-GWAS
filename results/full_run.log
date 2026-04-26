@@ -1,0 +1,180 @@
+============================================
+G-Atlas — full pipeline
+============================================
+[13:09:34] ======================================================================
+[13:09:34] DOWNLOAD REFERENCES
+[13:09:34] ======================================================================
+[13:09:34] HM3 BIM exists: data/hm3.bim
+[13:09:34] GENCODE genes exists: data/gencode_genes.bed
+[13:09:34] Sentinel sumstats: 24/16 traits in data/sentinel_sumstats
+[13:09:34] 
+Data provenance:
+[13:09:34]   HM3 BIM:           1000 Genomes HapMap3 QC'd (via Zenodo/1000 Genomes)
+[13:09:34]   Sentinel GWAS:     OpenGWAS API (https://gwas.mrcieu.ac.uk/)
+[13:09:34]   EBI GWAS:          EBI GWAS Catalog FTP (download_ebi.py)
+[13:09:34]   CAUSALdb2:         http://www.mulinlab.org/causaldb/ (download_causaldb.py)
+[13:09:34]   All sentinel traits excluded from all training.
+GWAS .npz: 31200 files ✓
+CAUSALdb2: ✓
+
+
+[1/3] encoder.pt exists — skipping pretrain. Delete to retrain.
+
+[2/3] pip_head.pt exists — skipping PIP training. Delete to retrain.
+
+[3/3] Benchmarks...
+[13:09:37] ======================================================================
+[13:09:37] G-ATLAS FULL BENCHMARK (cuda)
+[13:09:37] ======================================================================
+[13:09:37] Model loaded
+[13:09:37] CAUSALdb2: 10291 GWAS, 8232 train, 2059 test
+[13:09:37] 
+======================================================================
+[13:09:37] BENCHMARK 1: CAUSALdb2 held-out (AUROC + AUPRC)
+[13:09:37] ======================================================================
+/home/vigil/.local/lib/python3.12/site-packages/torch/nn/modules/transformer.py:531: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /pytorch/aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(
+[13:13:04]     1600/2059
+[13:13:53]     2000/2059
+[13:14:00]   SuSiE>0.5:
+[13:14:00]     G-Atlas      AUROC=0.8783  AUPRC=0.1057
+[13:14:00]     -log10(p)    AUROC=0.7746  AUPRC=0.0296
+[13:14:00]     |z|          AUROC=0.7749  AUPRC=0.0297
+[13:14:00]   SuSiE>0.1:
+[13:14:01]     G-Atlas      AUROC=0.8860  AUPRC=0.2929
+[13:14:01]     -log10(p)    AUROC=0.7358  AUPRC=0.0900
+[13:14:01]     |z|          AUROC=0.7361  AUPRC=0.0900
+[13:14:01]   Spearman: +0.6390
+[13:14:01] 
+======================================================================
+[13:14:01] BENCHMARK 2: Ablation (pretrained vs random)
+[13:14:01] ======================================================================
+[13:17:27]     1600/2059
+[13:18:16]     2000/2059
+[13:18:23]   Training PIP head on random encoder...
+[13:19:30]   Blocks: 20000
+[13:19:35]   Random PIP head trained
+[13:23:03]     1600/2059
+[13:23:53]     2000/2059
+[13:24:00]   Pretrained  : AUROC=0.8783  AUPRC=0.1057
+[13:24:00]   Random      : AUROC=0.7256  AUPRC=0.0195
+[13:24:01] 
+======================================================================
+[13:24:01] BENCHMARK 3: Multi-method ceiling matrix
+[13:24:01] ======================================================================
+[13:24:01]   Loading full CAUSALdb2 (36M rows)...
+[13:25:11]   Loaded: 36364484 rows
+[13:27:54]     200/2059
+[13:33:11]     600/2059
+[13:43:43]     1400/2059
+[13:46:24]     1600/2059
+[13:51:35]     2000/2059
+[13:52:23]   Variants: 5515432
+[13:52:23] 
+  AUC matrix (ref defines score>0.5 positives):
+[13:52:23]                            abf      finemap      paintor     caviarbf        susie polyfun_finemap polyfun_susie       gatlas
+[13:52:29]   abf                   —       0.9528    0.9535    0.9551    0.9534    0.6916    0.7628    0.9194  
+[13:52:35]   finemap           0.8675        —       0.9991    0.9985    0.9990    0.6750    0.7398    0.8929  
+[13:52:41]   paintor           0.8630    0.9933        —       0.9928    0.9935    0.6749    0.7393    0.8873  
+[13:52:46]   caviarbf          0.8732    0.9994    0.9998        —       0.9999    0.6626    0.7304    0.8944  
+[13:52:52]   susie             0.8668    0.9994    0.9999    0.9993        —       0.6744    0.7400    0.8927  
+[13:52:59]   polyfun_finemap   0.7641    0.8063    0.8071    0.8073    0.8066        —       0.9694    0.8276  
+[13:53:05]   polyfun_susie     0.8046    0.8561    0.8581    0.8583    0.8576    0.9409        —       0.8376  
+[13:53:11]   gatlas            0.8496    0.8060    0.8256    0.8266    0.8250    0.6620    0.7495        —     
+[13:53:11] 
+======================================================================
+[13:53:11] BENCHMARK 4: Candidate filtering with baselines
+[13:53:11] ======================================================================
+[13:53:11]   Variants: 780,180, SuSiE high-PIP: 4475
+[13:53:11] 
+  Method           Keep%   Recall   Enrich
+[13:53:11]   G-Atlas           1.0%    0.282    28.2×
+[13:53:11]   G-Atlas           5.0%    0.629    12.6×
+[13:53:11]   G-Atlas          10.0%    0.730     7.3×
+[13:53:11]   G-Atlas          20.0%    0.812     4.1×
+[13:53:11]   -log10(p)         1.0%    0.100    10.0×
+[13:53:11]   -log10(p)         5.0%    0.289     5.8×
+[13:53:11]   -log10(p)        10.0%    0.433     4.3×
+[13:53:11]   -log10(p)        20.0%    0.611     3.1×
+[13:53:11]   |z|               1.0%    0.101    10.1×
+[13:53:12]   |z|               5.0%    0.289     5.8×
+[13:53:12]   |z|              10.0%    0.433     4.3×
+[13:53:12]   |z|              20.0%    0.613     3.1×
+[13:53:12]   |beta|            1.0%    0.010     1.0×
+[13:53:12]   |beta|            5.0%    0.030     0.6×
+[13:53:12]   |beta|           10.0%    0.063     0.6×
+[13:53:12]   |beta|           20.0%    0.158     0.8×
+[13:53:12]   Random            1.0%    0.010 0.0×
+[13:53:12]   Random            5.0%    0.050 0.1×
+[13:53:13]   Random           10.0%    0.100 0.1×
+[13:53:14]   Random           20.0%    0.199 0.2×
+[13:53:14] 
+======================================================================
+[13:53:14] BENCHMARK 5: Calibration
+[13:53:14] ======================================================================
+[13:53:42]   Raw: Brier=0.005567, range=[0.0002,0.5279]
+[13:53:42]     [0.00,0.05): n=  30090 pred=0.0133 actual=0.0161
+[13:53:42]     [0.05,0.10): n=   1399 pred=0.0634 actual=0.1123
+[13:53:42]     [0.10,0.20): n=    271 pred=0.1321 actual=0.1765
+[13:53:42]     [0.20,0.50): n=     87 pred=0.2673 actual=0.3013
+[13:53:42]   Calibrated: Brier=0.005318, range=[0.0000,0.2857]
+[13:53:42] 
+======================================================================
+[13:53:42] BENCHMARK 6: Speed
+[13:53:42] ======================================================================
+[13:53:42]   LD backend: CuPy CUDA kernel
+[13:53:42]   CSV reader: polars
+[13:53:42]   Model: already loaded (one-time cost)
+[13:53:58] 
+  [Full GWAS] BMI (10,877,936 variants)
+[13:53:58]     Read:         6.7s
+[13:53:58]     Prep:         3.5s
+[13:53:58]     GPU:          5.6s  (1,940,206 variants/sec)
+[13:53:58]     Total:        15.8s  (690,466 variants/sec)
+[13:53:58]     Variants scored: 10,877,881 of 10,877,936
+[13:53:58] 
+  [Per locus] chr6:25-35Mb HLA (64,846 variants)
+[13:53:58]     Inference:    129ms
+[13:53:58] 
+  [Multi-GWAS] 3 traits back-to-back
+[13:54:08] Read (polars): 10,877,936 variants in 10.0s
+[13:54:19] Read (polars): 10,877,936 variants in 10.7s
+[13:54:33] Read (polars): 13,150,243 variants in 13.6s
+[13:54:33]     3 GWAS, 34,906,115 total variants in 34.9s
+[13:54:33]     Per-GWAS average: 11.6s
+[13:54:33] 
+  [Memory]
+[13:54:33]     GPU: 525MB allocated / 1013MB reserved
+[13:54:33]     Model: 3.3 MB on disk
+[13:54:33]     Feature array: 261MB (CPU)
+[13:54:34] 
+======================================================================
+[13:54:34] BENCHMARK 7: Multi-method consensus (subset: 500 test GWAS)
+[13:54:34] ======================================================================
+[13:54:34]   Loading CAUSALdb2 (all methods)...
+[13:55:08]   Loaded: 36,364,484 rows
+[13:55:08]   Computing G-Atlas scores on test data...
+[13:56:23]     100/500
+[13:57:35]     200/500
+[13:58:48]     300/500
+[14:01:16]     500/500
+[14:01:16]   Total variants: 1,336,758
+[14:01:16] 
+  [Multi-method consensus (7 methods)]
+[14:01:16]   Consensus = number of methods (out of 7) with PIP > 0.1
+[14:01:16]   Selection             Mean consensus  Consensus>=3 %  Consensus>=5 %
+[14:01:16]   G-Atlas top 1%                 3.14            50.8%            47.5%
+[14:01:16]   G-Atlas top 5%                 2.42            38.6%            35.9%
+[14:01:16]   G-Atlas top 10%                1.75            27.6%            25.4%
+[14:01:16]   -log10(p) top 1%               1.08            16.7%            14.0%
+[14:01:16]   -log10(p) top 5%               0.81            12.4%            10.8%
+[14:01:16]   -log10(p) top 10%              0.70            10.7%             9.4%
+[14:01:16]   Random top 1%                  0.27             3.9%
+[14:01:17] 
+======================================================================
+[14:01:17] ALL BENCHMARKS COMPLETE
+[14:01:17] ======================================================================
+============================================
+Done. Results: results/benchmark.log
+Inference: python3 inference/predict.py INPUT.tsv OUTPUT.scores.tsv
+============================================

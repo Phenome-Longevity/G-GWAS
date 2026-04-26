@@ -1,0 +1,15 @@
+eQTL Catalogue r8 beta fine-mapped QTL anchor
+================================================
+
+Scope
+- Uses eQTL Catalogue r8 beta SuSiE credible-set variants.
+- Counts support only when the atlas candidate variant is present in a molecular-QTL credible set for the same candidate gene.
+- This is separate from the GTEx/non-eQTL SCREEN convergence layer.
+
+- observed_exact_non_eqtl/eqtl_catalogue_any_same_gene: 216 observed loci vs 17.5 null; 12.34x; p=0.0004998.
+- moderate_exact_non_eqtl/eqtl_catalogue_any_same_gene: 198 observed loci vs 12.3 null; 16.07x; p=0.0004998.
+- moderate_exact_non_eqtl/eqtl_catalogue_pip_ge_0_1_same_gene: 55 observed loci vs 3.3 null; 16.55x; p=0.0004998.
+- moderate_exact_non_eqtl/eqtl_catalogue_pip_ge_0_5_same_gene: 18 observed loci vs 0.9 null; 19.31x; p=0.0004998.
+- systemic_non_neural_exact/eqtl_catalogue_any_same_gene: 89 observed loci vs 5.5 null; 16.12x; p=0.0004998.
+
+Elapsed seconds: 23.6

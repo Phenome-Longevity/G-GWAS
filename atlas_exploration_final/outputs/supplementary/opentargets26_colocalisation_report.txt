@@ -1,0 +1,16 @@
+Open Targets 26.03 same-gene colocalisation anchor
+============================================================
+
+Scope
+- Uses Open Targets GWAS-molecular QTL colocalisation rows linked to atlas GWAS credible-set coordinate hits.
+- Counts candidate genes only when the colocalized molecular-QTL gene matches the GTEx/non-eQTL SCREEN candidate gene.
+- This is stronger than L2G/e2G coherence, but still precomputed public genetics support rather than experimental validation.
+
+Gene-label null
+- observed_exact_non_eqtl/ot_coloc_h4_ge_0_8_gene_agree: 267 observed loci vs 20.0 null; 13.35x; p=0.0004998.
+- moderate_exact_non_eqtl/ot_coloc_h4_ge_0_8_gene_agree: 246 observed loci vs 15.1 null; 16.30x; p=0.0004998.
+- lower_recurrence_exact/ot_coloc_h4_ge_0_8_gene_agree: 167 observed loci vs 8.4 null; 19.90x; p=0.0004998.
+- systemic_non_neural_exact/ot_coloc_h4_ge_0_8_gene_agree: 127 observed loci vs 6.0 null; 21.21x; p=0.0004998.
+- moderate_exact_non_eqtl/ot_coloc_clpp_ge_0_01_gene_agree: 209 observed loci vs 13.5 null; 15.44x; p=0.0004998.
+
+Elapsed seconds: 130.2

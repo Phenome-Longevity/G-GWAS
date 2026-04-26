@@ -1,0 +1,9 @@
+set	variants	loci_500kb	exact_coordinate_hit_loci	ld_proxy_r2_ge_0_8_loci	ld_proxy_r2_ge_0_6_loci	not_exact_or_ld_proxy_r2_ge_0_8_loci	not_exact_or_ld_proxy_r2_ge_0_6_loci	no_external_gwas_credible_set_broad_locus_overlap_loci
+permutation_tested_non_eqtl	2136	1192	521	291	429	883	842	1
+observed_exact_non_eqtl	1278	807	385	214	316	535	508	1
+non_exact_tested	858	615	190	95	152	480	461	0
+moderate_exact_non_eqtl	1151	738	351	194	287	482	457	1
+hidden_exact_non_eqtl	127	116	46	26	36	70	68	0
+lower_recurrence_exact	733	543	243	134	195	345	325	1
+core_exact_n10	545	411	186	101	153	252	240	0
+systemic_non_neural_exact	550	379	178	101	144	241	229	0

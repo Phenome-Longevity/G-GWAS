@@ -1,0 +1,9 @@
+set	variants	loci_500kb	ot_gwas_cs_locus_overlap_any_variants	ot_gwas_cs_locus_overlap_any_loci	ot_gwas_cs_position_any_variants	ot_gwas_cs_position_any_loci	ot_gwas_cs_pip_ge_0_01_variants	ot_gwas_cs_pip_ge_0_01_loci	ot_gwas_cs_pip_ge_0_05_variants	ot_gwas_cs_pip_ge_0_05_loci	ot_gwas_cs_pip_ge_0_10_variants	ot_gwas_cs_pip_ge_0_10_loci	ot_gwas_cs_top_pip_ge_0_50_variants	ot_gwas_cs_top_pip_ge_0_50_loci	ot_l2g_gene_agree_score_ge_0_05_variants	ot_l2g_gene_agree_score_ge_0_05_loci	ot_l2g_top_gene_agree_variants	ot_l2g_top_gene_agree_loci	ot_l2g_e2g_gene_agree_variants	ot_l2g_e2g_gene_agree_loci	ot_l2g_coloc_gene_agree_variants	ot_l2g_coloc_gene_agree_loci
+permutation_tested_non_eqtl	2136	1192	2135	1191	751	521	545	397	224	191	138	123	40	39	416	312	301	241	356	268	345	261
+observed_exact_non_eqtl	1278	807	1277	806	526	385	375	284	139	122	82	75	20	20	416	312	301	241	356	268	345	261
+non_exact_tested	858	615	858	615	225	190	170	147	85	78	56	53	20	20	0	0	0	0	0	0	0	0
+moderate_exact_non_eqtl	1151	738	1150	737	474	351	340	262	127	111	70	64	16	16	379	288	270	220	327	251	313	239
+hidden_exact_non_eqtl	127	116	127	116	52	46	35	31	12	12	12	12	4	4	37	35	31	29	29	27	32	30
+lower_recurrence_exact	733	543	732	542	299	243	210	179	80	75	43	41	9	9	236	192	161	141	198	163	192	159
+core_exact_n10	545	411	545	411	227	186	165	135	59	55	39	37	11	11	180	150	140	119	158	130	153	127
+systemic_non_neural_exact	550	379	550	379	229	178	164	134	54	49	31	30	10	10	180	143	134	110	155	127	149	121

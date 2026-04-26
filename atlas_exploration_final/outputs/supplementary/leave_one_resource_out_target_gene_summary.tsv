@@ -1,0 +1,101 @@
+set	holdout	mode	loci	multi_gene_loci	heldout_supported_loci_any_candidate	observed_loci	null_locus_mean	null_locus_sd	fold_enrichment	empirical_p_upper	n_permutations
+lower_recurrence_exact	ot_coloc_h4_ge_0_8	top1_vs_uniform_local_gene_null	543	229	179	164	138.8125	4.075739144595419	1.1814497973885638	0.0004997501249375312	2000
+lower_recurrence_exact	ot_coloc_h4_ge_0_8	top1_vs_gene_degree_local_gene_null	543	229	179	164	150.1345	3.918046106498279	1.0923538560424153	0.0004997501249375312	2000
+lower_recurrence_exact	ot_coloc_h4_ge_0_8	top1_vs_distance_weighted_local_gene_null	543	229	179	164	141.3985	3.712490948746173	1.1598425725874035	0.0004997501249375312	2000
+lower_recurrence_exact	ot_coloc_h4_ge_0_8	top3_vs_uniform_local_gene_null	543	229	179	175	171.443	2.0368665672317254	1.0207474204254474	0.06046976511744128	2000
+lower_recurrence_exact	ot_coloc_h4_ge_0_8	nearest_gene_baseline_descriptive	543	229	179	136					
+moderate_exact_non_eqtl	ot_coloc_h4_ge_0_8	top1_vs_uniform_local_gene_null	738	318	252	229	189.1355	5.1717998324329395	1.2107721712740336	0.0004997501249375312	2000
+moderate_exact_non_eqtl	ot_coloc_h4_ge_0_8	top1_vs_gene_degree_local_gene_null	738	318	252	229	207.2605	4.990199474509781	1.1048897402061657	0.0004997501249375312	2000
+moderate_exact_non_eqtl	ot_coloc_h4_ge_0_8	top1_vs_distance_weighted_local_gene_null	738	318	252	229	193.815	4.619571973961581	1.1815390965611536	0.0004997501249375312	2000
+moderate_exact_non_eqtl	ot_coloc_h4_ge_0_8	top3_vs_uniform_local_gene_null	738	318	252	247	241.296	2.532901852796107	1.0236390159803728	0.01649175412293853	2000
+moderate_exact_non_eqtl	ot_coloc_h4_ge_0_8	nearest_gene_baseline_descriptive	738	318	252	188					
+observed_exact_non_eqtl	ot_coloc_h4_ge_0_8	top1_vs_uniform_local_gene_null	807	341	267	242	201.441	5.219592040623028	1.2013443142160731	0.0004997501249375312	2000
+observed_exact_non_eqtl	ot_coloc_h4_ge_0_8	top1_vs_gene_degree_local_gene_null	807	341	267	242	219.813	5.10853007623229	1.1009357954261123	0.0004997501249375312	2000
+observed_exact_non_eqtl	ot_coloc_h4_ge_0_8	top1_vs_distance_weighted_local_gene_null	807	341	267	242	206.95	4.681929114170254	1.1693645808166224	0.0004997501249375312	2000
+observed_exact_non_eqtl	ot_coloc_h4_ge_0_8	top3_vs_uniform_local_gene_null	807	341	267	262	255.7755	2.541127390393308	1.0243357944760152	0.012993503248375811	2000
+observed_exact_non_eqtl	ot_coloc_h4_ge_0_8	nearest_gene_baseline_descriptive	807	341	267	200					
+systemic_non_neural_exact	ot_coloc_h4_ge_0_8	top1_vs_uniform_local_gene_null	379	150	136	129	106.834	3.512066529217923	1.2074807645506112	0.0004997501249375312	2000
+systemic_non_neural_exact	ot_coloc_h4_ge_0_8	top1_vs_gene_degree_local_gene_null	379	150	136	129	115.222	3.4344743130359054	1.1195778583950982	0.0004997501249375312	2000
+systemic_non_neural_exact	ot_coloc_h4_ge_0_8	top1_vs_distance_weighted_local_gene_null	379	150	136	129	109.863	3.1585153331201	1.1741896725922285	0.0004997501249375312	2000
+systemic_non_neural_exact	ot_coloc_h4_ge_0_8	top3_vs_uniform_local_gene_null	379	150	136	135	131.737	1.5352555177404106	1.0247690474202389	0.02948525737131434	2000
+systemic_non_neural_exact	ot_coloc_h4_ge_0_8	nearest_gene_baseline_descriptive	379	150	136	110					
+lower_recurrence_exact	eqtl_catalogue_pip_ge_0_1	top1_vs_uniform_local_gene_null	543	229	44	33	23.616	2.5514307553703524	1.3973577235772359	0.0004997501249375312	2000
+lower_recurrence_exact	eqtl_catalogue_pip_ge_0_1	top1_vs_gene_degree_local_gene_null	543	229	44	33	28.352	2.6787466923770453	1.1639390519187358	0.057971014492753624	2000
+lower_recurrence_exact	eqtl_catalogue_pip_ge_0_1	top1_vs_distance_weighted_local_gene_null	543	229	44	33	26.7615	2.5779722109363745	1.2331147357210919	0.013493253373313344	2000
+lower_recurrence_exact	eqtl_catalogue_pip_ge_0_1	top3_vs_uniform_local_gene_null	543	229	44	42	39.779	1.431496975824922	1.055833479976872	0.10694652673663169	2000
+lower_recurrence_exact	eqtl_catalogue_pip_ge_0_1	nearest_gene_baseline_descriptive	543	229	44	32					
+moderate_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	top1_vs_uniform_local_gene_null	738	318	59	42	30.089	2.8480053664422127	1.3958589517763969	0.0004997501249375312	2000
+moderate_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	top1_vs_gene_degree_local_gene_null	738	318	59	42	36.2825	3.0953973076563406	1.1575828567491215	0.04147926036981509	2000
+moderate_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	top1_vs_distance_weighted_local_gene_null	738	318	59	42	34.539	2.7772892661431428	1.216016676800139	0.0074962518740629685	2000
+moderate_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	top3_vs_uniform_local_gene_null	738	318	59	54	50.7195	1.9969510902444294	1.0646792653713069	0.08295852073963018	2000
+moderate_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	nearest_gene_baseline_descriptive	738	318	59	39					
+observed_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	top1_vs_uniform_local_gene_null	807	341	62	47	31.3095	2.8482917921214694	1.5011418259633658	0.0004997501249375312	2000
+observed_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	top1_vs_gene_degree_local_gene_null	807	341	62	47	37.6695	3.0703392714194973	1.2476937575492109	0.001999000499750125	2000
+observed_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	top1_vs_distance_weighted_local_gene_null	807	341	62	47	36.701	2.748522546404531	1.2806190567014522	0.0009995002498750624	2000
+observed_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	top3_vs_uniform_local_gene_null	807	341	62	56	51.9135	2.1822921320196196	1.0787174819651921	0.050974512743628186	2000
+observed_exact_non_eqtl	eqtl_catalogue_pip_ge_0_1	nearest_gene_baseline_descriptive	807	341	62	42					
+systemic_non_neural_exact	eqtl_catalogue_pip_ge_0_1	top1_vs_uniform_local_gene_null	379	150	27	22	14.0755	1.936149293583406	1.562999538204682	0.0004997501249375312	2000
+systemic_non_neural_exact	eqtl_catalogue_pip_ge_0_1	top1_vs_gene_degree_local_gene_null	379	150	27	22	17.0905	2.1077312484061514	1.2872648547438637	0.015992003998001	2000
+systemic_non_neural_exact	eqtl_catalogue_pip_ge_0_1	top1_vs_distance_weighted_local_gene_null	379	150	27	22	15.697	1.8721494255897064	1.401541695865452	0.0004997501249375312	2000
+systemic_non_neural_exact	eqtl_catalogue_pip_ge_0_1	top3_vs_uniform_local_gene_null	379	150	27	25	23.2305	1.3473223031978454	1.0761714125825963	0.1724137931034483	2000
+systemic_non_neural_exact	eqtl_catalogue_pip_ge_0_1	nearest_gene_baseline_descriptive	379	150	27	17					
+lower_recurrence_exact	abc_nasser_any	top1_vs_uniform_local_gene_null	543	229	37	26	27.362	1.9654229681475335	0.9502229369198159	0.8265867066466767	2000
+lower_recurrence_exact	abc_nasser_any	top1_vs_gene_degree_local_gene_null	543	229	37	26	30.1725	1.9651143954726011	0.8617118236805038	0.9895052473763118	2000
+lower_recurrence_exact	abc_nasser_any	top1_vs_distance_weighted_local_gene_null	543	229	37	26	27.108	1.8035970950410793	0.9591264571344252	0.8110944527736131	2000
+lower_recurrence_exact	abc_nasser_any	top3_vs_uniform_local_gene_null	543	229	37	35	35.862	0.9046353865460358	0.9759634153142601	0.9270364817591205	2000
+lower_recurrence_exact	abc_nasser_any	nearest_gene_baseline_descriptive	543	229	37	28					
+moderate_exact_non_eqtl	abc_nasser_any	top1_vs_uniform_local_gene_null	738	318	49	36	33.9245	2.4059705104278657	1.0611799731757283	0.25687156421789104	2000
+moderate_exact_non_eqtl	abc_nasser_any	top1_vs_gene_degree_local_gene_null	738	318	49	36	37.9465	2.4907307401262595	0.9487040965569947	0.8300849575212393	2000
+moderate_exact_non_eqtl	abc_nasser_any	top1_vs_distance_weighted_local_gene_null	738	318	49	36	34.18	2.130462258458797	1.0532475131655938	0.26436781609195403	2000
+moderate_exact_non_eqtl	abc_nasser_any	top3_vs_uniform_local_gene_null	738	318	49	47	46.991	1.218466795060634	1.0001915260369008	0.6851574212893553	2000
+moderate_exact_non_eqtl	abc_nasser_any	nearest_gene_baseline_descriptive	738	318	49	35					
+observed_exact_non_eqtl	abc_nasser_any	top1_vs_uniform_local_gene_null	807	341	52	39	36.901	2.399391076662865	1.0568819273190428	0.2493753123438281	2000
+observed_exact_non_eqtl	abc_nasser_any	top1_vs_gene_degree_local_gene_null	807	341	52	39	41.103	2.3969279571601456	0.9488358513977082	0.8610694652673663	2000
+observed_exact_non_eqtl	abc_nasser_any	top1_vs_distance_weighted_local_gene_null	807	341	52	39	37.0885	2.203428078619501	1.0515388867169069	0.2593703148425787	2000
+observed_exact_non_eqtl	abc_nasser_any	top3_vs_uniform_local_gene_null	807	341	52	50	49.9375	1.2314024224285827	1.0012515644555695	0.6601699150424788	2000
+observed_exact_non_eqtl	abc_nasser_any	nearest_gene_baseline_descriptive	807	341	52	38					
+systemic_non_neural_exact	abc_nasser_any	top1_vs_uniform_local_gene_null	379	150	29	25	21.8695	1.7609713967381937	1.1431445620613183	0.06796601699150424	2000
+systemic_non_neural_exact	abc_nasser_any	top1_vs_gene_degree_local_gene_null	379	150	29	25	24.019	1.7231144946813284	1.0408426662225738	0.3983008495752124	2000
+systemic_non_neural_exact	abc_nasser_any	top1_vs_distance_weighted_local_gene_null	379	150	29	25	22.497	1.5359591743573935	1.1112592790149798	0.0879560219890055	2000
+systemic_non_neural_exact	abc_nasser_any	top3_vs_uniform_local_gene_null	379	150	29	29	28.213	0.7771312414793538	1.027894942047992	0.4112943528235882	2000
+systemic_non_neural_exact	abc_nasser_any	nearest_gene_baseline_descriptive	379	150	29	21					
+lower_recurrence_exact	ot_l2g_score_ge_0_05	top1_vs_uniform_local_gene_null	543	229	206	190	169.0555	4.018767845683394	1.1238912664775769	0.0004997501249375312	2000
+lower_recurrence_exact	ot_l2g_score_ge_0_05	top1_vs_gene_degree_local_gene_null	543	229	206	190	179.5705	3.9390084594758	1.0580802526027382	0.006496751624187906	2000
+lower_recurrence_exact	ot_l2g_score_ge_0_05	top1_vs_distance_weighted_local_gene_null	543	229	206	190	178.569	3.6611392995193786	1.0640144705968002	0.0004997501249375312	2000
+lower_recurrence_exact	ot_l2g_score_ge_0_05	top3_vs_uniform_local_gene_null	543	229	206	205	200.7975	1.8102851477482986	1.0209290454313424	0.008995502248875561	2000
+lower_recurrence_exact	ot_l2g_score_ge_0_05	nearest_gene_baseline_descriptive	543	229	206	182					
+moderate_exact_non_eqtl	ot_l2g_score_ge_0_05	top1_vs_uniform_local_gene_null	738	318	291	268	232.4565	5.059635135447213	1.1529038766392852	0.0004997501249375312	2000
+moderate_exact_non_eqtl	ot_l2g_score_ge_0_05	top1_vs_gene_degree_local_gene_null	738	318	291	268	249.665	4.838437789216687	1.0734384074660044	0.0004997501249375312	2000
+moderate_exact_non_eqtl	ot_l2g_score_ge_0_05	top1_vs_distance_weighted_local_gene_null	738	318	291	268	247.2615	4.381291545629429	1.0838727420160437	0.0004997501249375312	2000
+moderate_exact_non_eqtl	ot_l2g_score_ge_0_05	top3_vs_uniform_local_gene_null	738	318	291	289	281.7175	2.4354998624081046	1.0258503642833692	0.0009995002498750624	2000
+moderate_exact_non_eqtl	ot_l2g_score_ge_0_05	nearest_gene_baseline_descriptive	738	318	291	251					
+observed_exact_non_eqtl	ot_l2g_score_ge_0_05	top1_vs_uniform_local_gene_null	807	341	312	286	248.9175	5.310818783207919	1.1489750620185404	0.0004997501249375312	2000
+observed_exact_non_eqtl	ot_l2g_score_ge_0_05	top1_vs_gene_degree_local_gene_null	807	341	312	286	266.851	5.138385008954674	1.0717591464899887	0.0004997501249375312	2000
+observed_exact_non_eqtl	ot_l2g_score_ge_0_05	top1_vs_distance_weighted_local_gene_null	807	341	312	286	265.179	4.637533003244084	1.0785167754611038	0.0004997501249375312	2000
+observed_exact_non_eqtl	ot_l2g_score_ge_0_05	top3_vs_uniform_local_gene_null	807	341	312	309	302.3405	2.4491955882523464	1.0220264900005125	0.004997501249375313	2000
+observed_exact_non_eqtl	ot_l2g_score_ge_0_05	nearest_gene_baseline_descriptive	807	341	312	271					
+systemic_non_neural_exact	ot_l2g_score_ge_0_05	top1_vs_uniform_local_gene_null	379	150	151	142	123.089	3.4515265488996145	1.15363679938906	0.0004997501249375312	2000
+systemic_non_neural_exact	ot_l2g_score_ge_0_05	top1_vs_gene_degree_local_gene_null	379	150	151	142	130.785	3.283620879919227	1.085751424092977	0.0004997501249375312	2000
+systemic_non_neural_exact	ot_l2g_score_ge_0_05	top1_vs_distance_weighted_local_gene_null	379	150	151	142	130.338	3.0063724216352146	1.0894750571590788	0.0004997501249375312	2000
+systemic_non_neural_exact	ot_l2g_score_ge_0_05	top3_vs_uniform_local_gene_null	379	150	151	150	146.673	1.6356676631737195	1.0226831114110981	0.033483258370814596	2000
+systemic_non_neural_exact	ot_l2g_score_ge_0_05	nearest_gene_baseline_descriptive	379	150	151	135					
+lower_recurrence_exact	standalone_e2g_interval	top1_vs_uniform_local_gene_null	543	229	180	136	124.9665	4.574258373751412	1.0882916621654604	0.01249375312343828	2000
+lower_recurrence_exact	standalone_e2g_interval	top1_vs_gene_degree_local_gene_null	543	229	180	136	139.725	4.526877655808176	0.9733404902487028	0.8185907046476761	2000
+lower_recurrence_exact	standalone_e2g_interval	top1_vs_distance_weighted_local_gene_null	543	229	180	136	140.6565	4.439860800967299	0.9668945267371221	0.8755622188905547	2000
+lower_recurrence_exact	standalone_e2g_interval	top3_vs_uniform_local_gene_null	543	229	180	171	171.3965	2.3649702518522453	0.9976866505442059	0.6506746626686657	2000
+lower_recurrence_exact	standalone_e2g_interval	nearest_gene_baseline_descriptive	543	229	180	160					
+moderate_exact_non_eqtl	standalone_e2g_interval	top1_vs_uniform_local_gene_null	738	318	242	179	160.626	5.427324564273173	1.1143899493232727	0.0009995002498750624	2000
+moderate_exact_non_eqtl	standalone_e2g_interval	top1_vs_gene_degree_local_gene_null	738	318	242	179	181.3525	5.447392109110119	0.9870280255303897	0.7061469265367316	2000
+moderate_exact_non_eqtl	standalone_e2g_interval	top1_vs_distance_weighted_local_gene_null	738	318	242	179	185.2045	5.172915935875995	0.9664991941340518	0.9065467266366817	2000
+moderate_exact_non_eqtl	standalone_e2g_interval	top3_vs_uniform_local_gene_null	738	318	242	227	226.8285	3.03771321898569	1.000756077829726	0.5402298850574713	2000
+moderate_exact_non_eqtl	standalone_e2g_interval	nearest_gene_baseline_descriptive	738	318	242	216					
+observed_exact_non_eqtl	standalone_e2g_interval	top1_vs_uniform_local_gene_null	807	341	271	201	181.6405	5.794656916020758	1.1065814066796777	0.0009995002498750624	2000
+observed_exact_non_eqtl	standalone_e2g_interval	top1_vs_gene_degree_local_gene_null	807	341	271	201	203.8855	5.663075574498476	0.9858474486905641	0.7211394302848576	2000
+observed_exact_non_eqtl	standalone_e2g_interval	top1_vs_distance_weighted_local_gene_null	807	341	271	201	208.3165	5.392760766466669	0.9648779621393409	0.9255372313843079	2000
+observed_exact_non_eqtl	standalone_e2g_interval	top3_vs_uniform_local_gene_null	807	341	271	254	253.5925	3.1607655669923926	1.0016069087216697	0.5197401299350325	2000
+observed_exact_non_eqtl	standalone_e2g_interval	nearest_gene_baseline_descriptive	807	341	271	239					
+systemic_non_neural_exact	standalone_e2g_interval	top1_vs_uniform_local_gene_null	379	150	139	108	100.697	3.8107022615080983	1.0725245042056863	0.03648175912043978	2000
+systemic_non_neural_exact	standalone_e2g_interval	top1_vs_gene_degree_local_gene_null	379	150	139	108	110.8525	3.8509945247188693	0.9742676078572878	0.8105947026486756	2000
+systemic_non_neural_exact	standalone_e2g_interval	top1_vs_distance_weighted_local_gene_null	379	150	139	108	111.4475	3.659499927566597	0.9690661522241414	0.8495752123938031	2000
+systemic_non_neural_exact	standalone_e2g_interval	top3_vs_uniform_local_gene_null	379	150	139	135	132.687	1.8960032737859664	1.017432001627891	0.16691654172913542	2000
+systemic_non_neural_exact	standalone_e2g_interval	nearest_gene_baseline_descriptive	379	150	139	122					

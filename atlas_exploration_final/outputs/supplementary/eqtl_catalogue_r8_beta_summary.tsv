@@ -1,0 +1,7 @@
+set	variants	loci_500kb	eqtl_catalogue_any_same_gene_variants	eqtl_catalogue_any_same_gene_loci	eqtl_catalogue_pip_ge_0_1_same_gene_variants	eqtl_catalogue_pip_ge_0_1_same_gene_loci	eqtl_catalogue_pip_ge_0_5_same_gene_variants	eqtl_catalogue_pip_ge_0_5_same_gene_loci
+observed_exact_non_eqtl	1278	807	269	216	69	62	21	20
+moderate_exact_non_eqtl	1151	738	243	198	60	55	18	18
+hidden_exact_non_eqtl	127	116	26	26	9	9	3	3
+lower_recurrence_exact	733	543	156	140	41	39	10	10
+core_exact_n10	545	411	113	94	28	24	11	10
+systemic_non_neural_exact	550	379	111	89	25	23	8	8

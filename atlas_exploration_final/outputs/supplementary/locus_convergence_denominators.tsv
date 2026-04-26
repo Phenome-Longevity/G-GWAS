@@ -1,0 +1,4 @@
+denominator	definition	variants	loci_500kb
+strict_eligible_all_screen_context	eligible_strict_nonblood_hidden_moderate is true; includes variants without non-eQTL SCREEN genes	3083	1630
+permutation_tested_non_eqtl	strict eligible plus at least one GTEx gene and at least one non-eQTL SCREEN gene	2136	1192
+observed_exact_non_eqtl	permutation-tested variants with GTEx/non-eQTL SCREEN gene overlap	1278	807
