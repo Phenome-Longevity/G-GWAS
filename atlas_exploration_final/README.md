@@ -1,6 +1,6 @@
 # Atlas Exploration
 
-Self-contained downstream analysis of the `1,587`-GWAS G-Atlas score atlas.
+Self-contained downstream analysis of the `1,587`-GWAS G-Phenome score atlas.
 
 ## Entry Point
 
@@ -12,9 +12,9 @@ python3 -u run_atlas_exploration.py 2>&1 | tee logs/run_atlas_exploration.log
 
 | file | role |
 |---|---|
-| `inputs/no_window_gatlas_1587_gwas.parquet` | fixed G-Atlas score-atlas table: 1,730,224 variants aggregated across 1,587 GWAS |
+| `inputs/no_window_gatlas_1587_gwas.parquet` | fixed G-Phenome score-atlas table: 1,730,224 variants aggregated across 1,587 GWAS |
 
-The input parquet is the handoff from model inference to downstream atlas analysis. Each row is a variant with `CHR`, `BP`, `snp`, `n_traits`, `traits`, `scores`, `max_score`, and `mean_score`. The `traits` and `scores` list columns record the GWAS accessions and G-Atlas scores in which that variant was observed. The file name preserves the original run label; the analysis treats it as the frozen `1,587`-GWAS score atlas.
+The input parquet is the handoff from model inference to downstream atlas analysis. Each row is a variant with `CHR`, `BP`, `snp`, `n_traits`, `traits`, `scores`, `max_score`, and `mean_score`. The `traits` and `scores` list columns record the GWAS accessions and G-Phenome scores in which that variant was observed. The file name preserves the original run label; the analysis treats it as the frozen `1,587`-GWAS score atlas.
 
 Public annotation resources are cached inside this package under `cache_v3/`. The run checks the manifest, downloads missing or size-mismatched public cache archives from `https://gatlas.szags.uk/`, extracts them, and then regenerates the outputs.
 
