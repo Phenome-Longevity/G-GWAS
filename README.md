@@ -26,10 +26,10 @@ python inference/predict.py my_gwas.tsv my_results.scores.tsv
 | AUPRC vs SuSiE (PIP > 0.1) | **0.293** | 0.090 |
 
 - **88% agreement with SuSiE** on 2,059 held-out GWAS (full test set)
-- **81-92% agreement** with FINEMAP, PAINTOR, CAVIARBF, ABF, PolyFun (trained on SuSiE only — transfers across methods)
-- **Pretraining gap: +0.147 AUROC / 5.2× AUPRC** (pretrained 0.878 vs random 0.731)
+- **83-92% agreement** with FINEMAP, PAINTOR, CAVIARBF, ABF, PolyFun (trained on SuSiE only — transfers across methods)
+- **Pretraining gap: +0.147 AUROC / 5.3× AUPRC** (pretrained 0.878 vs random 0.731)
 - **Full GWAS in 16.0 seconds** end-to-end on GPU (10.9M variants, custom CUDA kernel)
-- **Per locus in 93 ms** (65K variants, HLA region)
+- **Per locus in 129 ms** (65K variants, HLA region)
 - **3.3 MB** total model size. **525 MB GPU memory.**
 - **Top 5% of G-Phenome-ranked variants recover 63% of SuSiE high-confidence variants** (vs 29% for p-value)
 
@@ -62,7 +62,7 @@ No R. No LD reference panel. No setup.
 
 1. **Pretrained encoder** (811K params): Self-supervised transformer trained on 31,200 GWAS from the EBI GWAS Catalog. Learns cross-GWAS variant patterns via masked z-score reconstruction + denoising.
 
-2. **Fine-mapping head** (25K params): Small prediction head trained on 8,232 CAUSALdb2 GWAS with real SuSiE posterior inclusion probabilities. Encoder frozen during head training.
+2. **Fine-mapping head** (17K params): Small prediction head trained on 8,232 CAUSALdb2 GWAS with real SuSiE posterior inclusion probabilities. Encoder frozen during head training.
 
 3. **Inference**: Raw GWAS → 500kb blocks → encoder → head → per-variant scores with rsIDs. No LD matrix computation. Custom CUDA kernel for LD feature acceleration.
 
@@ -103,7 +103,7 @@ g-phenome/
 │   ├── model.py                  # Encoder + head architecture
 │   └── features.py               # Feature computation
 ├── models/
-│   ├── encoder.pt                # Pretrained encoder (3.2 MB)
+│   ├── encoder.pt                # Pretrained encoder (3.3 MB)
 │   └── pip_head.pt               # Fine-mapping head (73 KB)
 ├── results/                      # Benchmark logs
 └── reproduce.sh                  # One script reproduces everything
@@ -137,9 +137,9 @@ The distributed model weights are sufficient for inference on new GWAS without a
 | | G-Phenome | SuSiE |
 |--|---------|-------|
 | Full GWAS | **16.0 seconds** | Hours |
-| Per locus | **93 ms** | Minutes |
+| Per locus | **129 ms** | Minutes |
 | Setup time | **2 minutes** | Hours-days |
-| LD reference | **Not needed** | 21+ GB required |
+| LD reference | **Not needed** | 20+ GB required |
 | Dependencies | PyTorch + NumPy | R + susieR + bigsnpr |
 | Model size | **3.3 MB** | N/A |
 | GPU memory | **525 MB** | N/A (CPU) |
