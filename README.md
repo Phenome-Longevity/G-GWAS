@@ -86,7 +86,7 @@ Full retraining requires the preprocessed `data/gwas_31k/*.npz` corpus (`31,200`
 ## Repository structure
 
 ```
-g-phenome/
+g-gwas/
 ├── data/
 │   ├── download_ebi.py           # Download raw GWAS from EBI Catalog
 │   ├── preprocess.py             # Raw TSV → preprocessed blocks
